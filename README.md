@@ -16,8 +16,3 @@ Aplicativo Android para monitoramento do consumo diário de água, com metas per
 - Android SDK
 - XML
 - Canvas
-
-## Sobre
-
-Projeto acadêmico desenvolvido para a avaliação N1, com foco na criação de uma `View` personalizada e no desenvolvimento de aplicações Android.
-
