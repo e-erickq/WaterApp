@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="agua_fundo">#E8F4FD</color>
+    <color name="agua_card">#FFFFFF</color>
+    <color name="agua_primaria">#1E88E5</color>
+    <color name="agua_anel">#4DA6F5</color>
+    <color name="agua_texto">#0D2B45</color>
+    <color name="agua_texto_suave">#5B7A94</color>
+    <color name="agua_borda">#C9E3F6</color>
+    <color name="agua_alerta">#E53935</color>
 </resources>

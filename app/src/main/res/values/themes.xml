@@ -3,6 +3,10 @@
     <style name="Base.Theme.WaterApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/agua_primaria</item>
+        <item name="android:windowBackground">@color/agua_fundo</item>
+        <item name="android:statusBarColor">@color/agua_fundo</item>
+        <item name="android:textColorPrimary">@color/agua_texto</item>
     </style>
 
     <style name="Theme.WaterApp" parent="Base.Theme.WaterApp" />

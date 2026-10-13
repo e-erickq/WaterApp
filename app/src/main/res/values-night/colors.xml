@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="agua_fundo">#0A1628</color>
+    <color name="agua_card">#112240</color>
+    <color name="agua_primaria">#2F80FF</color>
+    <color name="agua_anel">#3D8BFF</color>
+    <color name="agua_texto">#EAF3FF</color>
+    <color name="agua_texto_suave">#8FA8C4</color>
+    <color name="agua_borda">#1E3A5F</color>
+    <color name="agua_alerta">#EF5350</color>
+</resources>

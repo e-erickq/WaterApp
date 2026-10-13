@@ -3,88 +3,119 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/agua_fundo"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Nosso componente customizado -->
-    <com.example.waterapp.view.WaterProgressView
-        android:id="@+id/waterProgress"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_gravity="center_horizontal"
-        app:maxValue="2000"
-        app:progressColor="#2196F3"
-        app:textColor="#000000" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:padding="12dp">
 
-    <!-- Alerta da tela: fica escondido até a meta ser ultrapassada -->
+        <com.example.waterapp.view.WaterProgressView
+            android:id="@+id/waterProgress"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:maxValue="2000"
+            app:progressColor="@color/agua_anel"
+            app:textColor="@color/agua_texto" />
+    </FrameLayout>
+
     <TextView
         android:id="@+id/tvAlert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#E53935"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_alerta"
         android:gravity="center"
-        android:padding="8dp"
+        android:padding="10dp"
         android:text="Meta diária ultrapassada!"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center" />
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Acumulado: 0 ml | Meta: 2000 ml"
+        android:textColor="@color/agua_texto_suave"
+        android:textSize="15sp" />
 
-    <!-- Registrar consumo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/etVolume"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_weight="1"
+            android:background="@drawable/bg_input"
             android:hint="Volume (ml)"
             android:inputType="number"
-            android:maxLength="5" />
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/agua_texto"
+            android:textColorHint="@color/agua_texto_suave" />
 
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Registrar" />
+            android:layout_width="130dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/agua_primaria"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="14dp" />
     </LinearLayout>
 
-    <!-- Alterar meta -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/etGoal"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_weight="1"
+            android:background="@drawable/bg_input"
             android:hint="Nova meta (ml)"
             android:inputType="number"
-            android:maxLength="5" />
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/agua_texto"
+            android:textColorHint="@color/agua_texto_suave" />
 
         <Button
             android:id="@+id/btnGoal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alterar meta" />
+            android:layout_width="130dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/agua_primaria"
+            android:text="Alterar meta"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="14dp" />
     </LinearLayout>
 
-    <!-- Lista dos registros do dia -->
     <ListView
         android:id="@+id/lvRecords"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1" />
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_card"
+        android:divider="@color/agua_borda"
+        android:dividerHeight="1dp"
+        android:padding="4dp" />
+
 </LinearLayout>
