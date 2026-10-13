@@ -16,3 +16,9 @@ Aplicativo Android para monitoramento do consumo diário de água, com metas per
 - Android SDK
 - XML
 - Canvas
+## Persistência
+
+Foi usado SharedPreferences porque os dados são poucos e simples (meta, data,
+total e registros do dia), é nativo do Android, não exige biblioteca nem banco,
+e os registros de dias anteriores são descartados, o que torna um banco de
+dados desnecessário.
